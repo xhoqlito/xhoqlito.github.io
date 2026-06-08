@@ -103,35 +103,16 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      cursor: pointer;
       position: relative;
       background: #ffffff;
-      transition: transform 0.2s ease;
-    }
-
-    .photo-box:hover {
-      transform: translateY(-2px);
-    }
-
-    .photo-box span {
-      font-size: 11px;
-      color: #000000;
-      text-align: center;
-      padding: 5px;
-      font-weight: 500;
     }
 
     .photo-box img {
-      position: absolute;
-      inset: 0;
       width: 100%;
       height: 100%;
       object-fit: cover;
       border-radius: 5px;
-      display: none;
     }
-
-    #photoInput { display: none; }
 
     /* ── ESTRUCTURA PRINCIPAL ── */
     .main-layout {
@@ -271,13 +252,11 @@
         </div>
       </div>
 
-      <!-- Foto de perfil interactiva en el lado derecho -->
+      <!-- Foto de perfil fija con el nombre miguelbb.png -->
       <div class="photo-area">
-        <label class="photo-box" for="photoInput" title="Haga clic para subir foto">
-          <input type="file" id="photoInput" accept="image/*" onchange="loadPhoto(event)"/>
-          <img id="profileImg" src="" alt="Foto de perfil"/>
-          <span id="photoLabel">Subir Foto CV</span>
-        </label>
+        <div class="photo-box">
+          <img src="miguelbb.png" alt="Foto Miguel Adrian Araujo">
+        </div>
       </div>
     </div>
   </header>
@@ -358,21 +337,6 @@
   </div>
 
 </div>
-
-<script>
-  function loadPhoto(event) {
-    const file = event.target.files[0];
-    if (!file) return;
-    const reader = new FileReader();
-    reader.onload = function(e) {
-      const img = document.getElementById('profileImg');
-      img.src = e.target.result;
-      img.style.display = 'block';
-      document.getElementById('photoLabel').style.display = 'none';
-    };
-    reader.readAsDataURL(file);
-  }
-</script>
 
 </body>
 </html>
