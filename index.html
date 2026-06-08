@@ -9,8 +9,8 @@
 
     body {
       font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-      background-color: #f3f4f6;
-      color: #1f2937;
+      background-color: #ffffff;
+      color: #000000;
       padding: 40px 20px;
       line-height: 1.6;
     }
@@ -19,34 +19,30 @@
       max-width: 1050px;
       margin: 0 auto;
       background: #ffffff;
-      padding: 40px;
-      border-radius: 16px;
-      box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05), 0 8px 10px -6px rgba(0, 0, 0, 0.05);
+      padding: 20px 40px;
     }
 
-    /* ── ENCABEZADO ESTILO CV ── */
+    /* ── ENCABEZADO ── */
     .header {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      margin-bottom: 35px;
-      background-color: #f8fafc;
-      padding: 30px;
-      border-radius: 12px;
-      border: 1px solid #e2e8f0;
+      margin-bottom: 45px;
+      padding-bottom: 30px;
+      border-bottom: 1px solid #e5e7eb;
     }
 
     .header-info h1 {
       font-size: 32px;
       font-weight: 800;
-      color: #111827;
+      color: #000000;
       margin-bottom: 6px;
       letter-spacing: -0.025em;
     }
 
     .header-info .subtitle {
       font-size: 16px;
-      color: #2563eb;
+      color: #000000;
       font-weight: 600;
       margin-bottom: 6px;
       letter-spacing: 0.025em;
@@ -54,11 +50,11 @@
 
     .header-info p {
       font-size: 14px;
-      color: #4b5563;
+      color: #000000;
       font-weight: 400;
     }
 
-    /* Contenedor de elementos del lado derecho */
+    /* Contenedor derecho */
     .header-right {
       display: flex;
       align-items: center;
@@ -90,11 +86,11 @@
     .logo-text {
       font-size: 10px;
       font-weight: 600;
-      color: #6b7280;
+      color: #000000;
       line-height: 1.3;
     }
 
-    /* Área de foto de perfil (Lado derecho) */
+    /* Área de foto de perfil */
     .photo-area {
       text-align: center;
     }
@@ -102,26 +98,24 @@
     .photo-box {
       width: 110px;
       height: 130px;
-      border: 2px dashed #d1d5db;
-      border-radius: 10px;
+      border: 1px solid #000000;
+      border-radius: 6px;
       display: flex;
       align-items: center;
       justify-content: center;
       cursor: pointer;
       position: relative;
       background: #ffffff;
-      transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+      transition: transform 0.2s ease;
     }
 
     .photo-box:hover {
       transform: translateY(-2px);
-      border-color: #2563eb;
-      box-shadow: 0 10px 15px -3px rgba(37, 99, 235, 0.1);
     }
 
     .photo-box span {
       font-size: 11px;
-      color: #6b7280;
+      color: #000000;
       text-align: center;
       padding: 5px;
       font-weight: 500;
@@ -133,21 +127,21 @@
       width: 100%;
       height: 100%;
       object-fit: cover;
-      border-radius: 8px;
+      border-radius: 5px;
       display: none;
     }
 
     #photoInput { display: none; }
 
-    /* ── ESTRUCTURA PRINCIPAL CV ── */
+    /* ── ESTRUCTURA PRINCIPAL ── */
     .main-layout {
       display: flex;
-      gap: 35px;
+      gap: 45px;
     }
 
     /* Menú Izquierdo */
     .sidebar {
-      width: 200px;
+      width: 180px;
       flex-shrink: 0;
     }
 
@@ -161,59 +155,50 @@
     }
 
     .sidebar li {
-      margin-bottom: 6px;
+      margin-bottom: 4px;
     }
 
     .sidebar a {
-      color: #4b5563;
+      color: #000000;
       text-decoration: none;
       font-size: 15px;
       font-weight: 500;
       display: block;
-      padding: 10px 16px;
-      border-radius: 8px;
+      padding: 8px 0;
       transition: all 0.2s ease;
     }
 
     .sidebar a:hover {
-      background-color: #f3f4f6;
-      color: #2563eb;
-      font-weight: 600;
-      padding-left: 20px;
+      color: #000000;
+      font-weight: 700;
+      padding-left: 6px;
     }
 
-    /* Contenido Derecho */
+    /* Contenido Derecho (Sin recuadros traseros) */
     .content {
       flex: 1;
     }
 
     .section {
-      background: #ffffff;
-      border: 1px solid #e5e7eb;
-      border-radius: 12px;
-      padding: 28px;
-      margin-bottom: 24px;
-      transition: border-color 0.2s ease;
-    }
-
-    .section:hover {
-      border-color: #d1d5db;
+      background: none;
+      border: none;
+      padding: 0;
+      margin-bottom: 40px;
     }
 
     .section-title {
-      color: #2563eb;
+      color: #000000;
       font-size: 16px;
       font-weight: 700;
-      margin-bottom: 18px;
+      margin-bottom: 16px;
       text-transform: uppercase;
       letter-spacing: 0.05em;
-      border-left: 4px solid #2563eb;
-      padding-left: 12px;
+      padding-left: 0;
     }
 
     .section p {
       font-size: 14.5px;
-      color: #374151;
+      color: #000000;
       margin-bottom: 14px;
       text-align: justify;
     }
@@ -225,37 +210,28 @@
 
     ul.academic-list li {
       font-size: 14.5px;
-      color: #374151;
-      margin-bottom: 10px;
-      padding: 12px 16px;
-      background-color: #f9fafb;
-      border-radius: 8px;
-      border-left: 3px solid #e5e7eb;
-      transition: all 0.2s ease;
-    }
-
-    ul.academic-list li:hover {
-      transform: translateX(4px);
-      background-color: #f3f4f6;
-      border-left-color: #2563eb;
+      color: #000000;
+      margin-bottom: 12px;
+      padding: 0;
+      background: none;
+      border: none;
     }
 
     ul.academic-list strong {
-      color: #111827;
-      font-weight: 600;
+      color: #000000;
+      font-weight: 700;
     }
 
     /* Enlaces dentro del CV */
     .content a {
-      color: #2563eb;
-      text-decoration: none;
-      font-weight: 500;
-      border-bottom: 1px dashed transparent;
-      transition: border-color 0.2s ease;
+      color: #000000;
+      text-decoration: underline;
+      font-weight: 600;
     }
 
     .content a:hover {
-      border-bottom-color: #2563eb;
+      color: #000000;
+      text-decoration: none;
     }
 
     /* Responsive */
@@ -265,8 +241,8 @@
       .main-layout { flex-direction: column; }
       .sidebar { width: 100%; }
       .sidebar-nav { position: static; }
-      .sidebar ul { display: flex; flex-wrap: wrap; gap: 8px; }
-      .sidebar a { background: #f3f4f6; }
+      .sidebar ul { display: flex; flex-wrap: wrap; gap: 12px; }
+      .sidebar a { padding: 4px 0; }
     }
   </style>
 </head>
@@ -284,7 +260,7 @@
     </div>
 
     <div class="header-right">
-      <!-- Sección corregida con los nombres exactos de tus archivos locales -->
+      <!-- Logos de la facultad -->
       <div class="header-logos">
         <div class="logos-row">
           <img class="logo-img" src="san_marcos.png" alt="Escudo Universidad Nacional Mayor de San Marcos">
